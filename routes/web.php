@@ -25,3 +25,5 @@ Route::get('/dashboard', [PostController::class, 'index'])->name('dashboard')->m
 Route::get('/posts/create', [PostController::class, 'create']);
 Route::post('/posts', [PostController::class, 'store']);
 
+Route::get('/posts/like/{post}', [PostController::class, 'like']);
+
